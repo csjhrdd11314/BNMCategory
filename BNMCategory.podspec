@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                         This pod contains all kinds of categories which provides a great convenience for development.
                        DESC
   s.homepage         = "http://www.baidu.com"
-  s.license          = 'MIT'
+  s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = "chenshuijin@baidu.com"
   s.source           = { :git => "https://github.com/csjhrdd11314/BNMCategory.git", :tag => "0.0.1" }
   s.platform     = :ios, '7.0'

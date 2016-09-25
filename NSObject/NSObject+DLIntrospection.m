@@ -170,7 +170,7 @@ static void getSuper(Class class, NSMutableString *result) {
         NSMutableArray *selParts = [[methodDescription componentsSeparatedByString:@":"] mutableCopy];
         NSInteger offset = 2; //1-st arg is object (@), 2-nd is SEL (:)
         
-        for (int idx = offset; idx < args; idx++) {
+        for (NSInteger idx = offset; idx < args; idx++) {
             NSString *returnType = [NSString decodeType:method_copyArgumentType(methods[i], idx)];
             selParts[idx - offset] = [NSString stringWithFormat:@"%@:(%@)arg%d",
                                       selParts[idx - offset],
@@ -191,7 +191,6 @@ static void getSuper(Class class, NSMutableString *result) {
         [methodsDescription addObject:
          [NSString stringWithFormat:@"%@ (%@)%@",
           instance ? @"-" : @"+",
-#warning return correct type
           @"void",
           NSStringFromSelector(methods[i].name)]];
     }
