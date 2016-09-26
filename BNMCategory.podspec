@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BNMCategory"
-  s.version          = "0.0.3"
+  s.version          = "0.0.4"
   s.summary          = "CatBNMCategoryegory."
   s.description      = <<-DESC
                         This pod contains all kinds of categories which provides a great convenience for development.
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.homepage         = "http://www.baidu.com"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = "chenshuijin@baidu.com"
-  s.source           = { :git => "https://github.com/csjhrdd11314/BNMCategory.git", :tag => "0.0.3" }
+  s.source           = { :git => "https://github.com/csjhrdd11314/BNMCategory.git", :tag => "0.0.4" }
   s.platform     = :ios, '7.0'
   s.requires_arc = true
   s.public_header_files = "**/*.h"
