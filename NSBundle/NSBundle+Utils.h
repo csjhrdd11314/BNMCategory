@@ -10,6 +10,6 @@
 
 @interface NSBundle (Utils)
 
-+ (NSBundle *)bundleWithName:(NSString *)bundleName
++ (NSBundle *)bundleWithName:(NSString *)bundleName;
 
 @end
