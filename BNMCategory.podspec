@@ -8,18 +8,33 @@
 
 Pod::Spec.new do |s|
   s.name             = "BNMCategory"
-  s.version          = "0.0.5"
-  s.summary          = "CatBNMCategoryegory."
+  s.version          = "0.0.6"
+  s.summary          = "BNMCategory."
   s.description      = <<-DESC
                         This pod contains all kinds of categories which provides a great convenience for development.
                        DESC
   s.homepage         = "http://www.baidu.com"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = "chenshuijin@baidu.com"
-  s.source           = { :git => "https://github.com/csjhrdd11314/BNMCategory.git", :tag => "0.0.5" }
+  s.source           = { :git => "https://github.com/csjhrdd11314/BNMCategory.git", :tag => "0.0.6" }
   s.platform     = :ios, '7.0'
   s.requires_arc = true
-  s.public_header_files = "**/*.h"
-  s.source_files = "**/*.{h,m}"
+  s.source_files = "NSObject/**/*.{h,m}"
+
+#*********************************BNMCategory_NSBundle******************************#
+
+    s.subspec 'BNMCategory_NSBundle' do |arr|
+        arr.source_files = "NSBundle/**/*.{h,m}"
+        arr.public_header_files = "NSBundle/**/*.h"
+    end
+
+#*********************************BNMCategory_NSDictionary******************************#
+
+    s.subspec 'BNMCategory_NSDictionary' do |dic|
+        dic.source_files = "NSDictionary/**/*.{h,m}"
+        dic.public_header_files = "NSDictionary/**/*.h"
+    end
 
 end
+
+
