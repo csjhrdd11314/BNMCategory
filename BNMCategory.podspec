@@ -30,9 +30,9 @@ Pod::Spec.new do |s|
 
 #*********************************BNMCategory_NSDictionary******************************#
 
-    s.subspec 'BNMCategory_NSDictionary' do |dic|
-        dic.source_files = "NSDictionary/**/*.{h,m}"
-        dic.public_header_files = "NSDictionary/**/*.h"
+    s.subspec 'BNMCategory_NSString' do |dic|
+        dic.source_files = "NSString/**/*.{h,m}"
+        dic.public_header_files = "NSString/**/*.h"
     end
 
 end
